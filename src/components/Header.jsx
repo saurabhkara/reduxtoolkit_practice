@@ -10,10 +10,16 @@ export default function Header() {
             <Link to="/">Home</Link>
           </li>
           <li>
-            <Link to="/post">Posts</Link>
+            <Link to="/posts">Posts</Link>
           </li>
           <li>
             <Link to="/users">Users</Link>
+          </li>
+          <li>
+            <Link to="/posts/addpost">Add Post</Link>
+          </li>
+          <li>
+            <Link to="/users/adduser">Add User</Link>
           </li>
         </ul>
       </nav>
