@@ -7,6 +7,8 @@ import Post from "./components/Posts.jsx";
 import InternalLayout from "./components/InternalLayout.jsx";
 import AddUser from "./components/AddUser.jsx";
 import AddPost from "./components/AddPost.jsx";
+import { Provider } from "react-redux";
+import store from "./store/store.js";
 import "./App.css";
 
 import {
@@ -35,6 +37,8 @@ const router = createBrowserRouter(
 );
 createRoot(document.getElementById("root")).render(
   <StrictMode>
-    <RouterProvider router={router} />
+    <Provider store={store}>
+      <RouterProvider router={router} />
+    </Provider>
   </StrictMode>
 );
